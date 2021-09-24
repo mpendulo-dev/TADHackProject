@@ -1,0 +1,8 @@
+.btn {
+    background:#F57E5D;
+
+}
+.btn:hover {
+    background: #F36942;
+    font-weight: 600;
+}
