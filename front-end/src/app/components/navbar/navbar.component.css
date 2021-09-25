@@ -1,0 +1,11 @@
+.dev {
+    color: #F15025;
+}
+.btn-outline-primary {
+    border-color: #F15025;
+    color: #F15025;
+}
+.btn-outline-primary:hover {
+    background: #F15025;
+    color: white;
+}
