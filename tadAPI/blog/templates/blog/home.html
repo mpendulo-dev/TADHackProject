@@ -1,0 +1,17 @@
+{% extends  'blog/base.html' %}
+{%load static%}
+<link rel="stylesheet"  href="{% static 'style.css' %}">
+{%block content%}
+      {% for post in Posts %}
+      <span class="border border-secondary">
+           <div  class=" container-md card rounded-sm">
+              <h3>{{post.title}}</h3>
+              <p> We are in {{post.slug}}, {{post.author}}</p>
+              <p>Job posted on {{post.updated_on}}</p>
+              <h5> Career Descriptiop</h5>
+              <p>{{post.content}}</p>
+              <hr>
+            </div>
+      </span>
+      {%endfor%}
+{%endblock content%}
