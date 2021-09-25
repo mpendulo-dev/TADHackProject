@@ -1,6 +1,6 @@
-.btn {
+.btn-primary {
     background:#F57E5D;
-
+    border-color: #F57E5D;
 }
 .btn:hover {
     background: #F36942;
