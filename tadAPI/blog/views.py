@@ -7,4 +7,4 @@ from .models import CareerInfo
 
 def main(request):
     context={'Posts':CareerInfo.objects.all()}
-    return render(request, "blog/home.html", context)
+    return render(request, "users/learner.html", context)
