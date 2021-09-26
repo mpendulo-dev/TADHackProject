@@ -32,6 +32,7 @@ class Learner(models.Model):
     lastname=models.CharField(null=False, max_length=34)
     username=models.CharField(null=False, max_length=34)
     email=models.EmailField(null=False, max_length=34)
+    coins=models.IntegerField(default=0)
     address=models.CharField(null=False, max_length=34)
 
 
@@ -44,6 +45,11 @@ class Tutor(models.Model):
     email=models.EmailField(null=False, max_length=34)
     address=models.CharField(null=False, max_length=34)
     high_qualification= models.IntegerField(choices=QUALIFICATION , default=1)
+    ID_Document=  models.FileField(upload_to='documents/', null=True)
+    qualification = models.FileField(upload_to='documents/', null=True)
+    proof_of_residence=  models.FileField(upload_to='documents/', null=True)
     specialization=models.CharField(null=False, max_length=30)
+
+   
 
 # Create your models here.
